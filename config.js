@@ -5,10 +5,14 @@ var config = {
   showMarkers: false,
   theme: "ama",
   alignment: "left",
-  title: "",
+  title: "-",
   subtitle: "",
   byline: "",
-  footer: 'WEBMAP - Developed by <div style="text-align:center; margin-top:10px;"><img src="https://cdn.glitch.global/f234805b-7a88-450e-b0cb-9559cdfbb791/rect4-6-0-1.png?v=1750090350355" alt="Logo AMA" style="height:30px;"></div>',
+  footer: 'StoryMap – Built by <div style="text-align:center; margin-top:10px;"><a href="https://www.citiesofthefuture.org/contact-storymap" target="_blank"><img src="https://cdn.glitch.global/f234805b-7a88-450e-b0cb-9559cdfbb791/rect4-6-0-1.png?v=1750090350355" alt="Cities of the Future Logo" style="height:30px;"></a></div>',
+
+
+
+
 
   chapters: [
     {
@@ -66,7 +70,7 @@ var config = {
         { layer: "sian", opacity: 1 }
       ],
       onChapterExit: [
-        { layer: "sian", opacity: 0.2 }
+        { layer: "sian", opacity: 0.8 }
       ]
     },
     {
@@ -85,12 +89,13 @@ var config = {
         { layer: "tul", opacity: 0.6 }
       ],
       onChapterExit: [
-        { layer: "tul", opacity: 0 }
+        { layer: "tul", opacity: 0 },
+                { layer: "sian", opacity: 0 }
       ]
     },
     {
       id: "chap-5",
-      title: "Arrivals: Airport & Train",
+      title: "Tulum Airport",
       image: "https://raw.githubusercontent.com/mauebrm/silencio/refs/heads/main/tulum-airport.webp",
       description: "The journey into the Yucatán often begins far from the jungle...",
       location: {
@@ -125,7 +130,7 @@ var config = {
         { layer: "van", opacity: 1 }
       ],
       onChapterExit: [
-        { layer: "van", opacity: 0 }
+        { layer: "van", opacity: 0.6 }
       ]
     },
     {
@@ -144,7 +149,7 @@ var config = {
         { layer: "panga", opacity: 1 }
       ],
       onChapterExit: [
-        { layer: "panga", opacity: 0 }
+       
       ]
     },
     {
@@ -179,10 +184,12 @@ var config = {
         duration: 6000
       },
       onChapterEnter: [
-        { layer: "EXP", opacity: 1 }
+        { layer: "EXP", opacity: 1 }, 
+        { layer: "sian", opacity: 0 }
       ],
       onChapterExit: [
-        { layer: "EXP", opacity: 0 }
+        { layer: "panga", opacity: 0 },
+        { layer: "van", opacity: 0 }
       ]
     },
     {
@@ -195,7 +202,7 @@ var config = {
         center: [-87.45838, 19.94489],
         zoom: 17,
         pitch: 50,
-        bearing: 120,
+        bearing: -55,
         duration: 8000
       },
       onChapterEnter: [],
