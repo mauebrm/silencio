@@ -5,7 +5,7 @@ var config = {
   showMarkers: false,
   theme: "ama",
   alignment: "left",
-  title: "-",
+  title: "",
   subtitle: "",
   byline: "",
   footer: 'WEBMAP - Developed by <div style="text-align:center; margin-top:10px;"><img src="https://cdn.glitch.global/f234805b-7a88-450e-b0cb-9559cdfbb791/rect4-6-0-1.png?v=1750090350355" alt="Logo AMA" style="height:30px;"></div>',
