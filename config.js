@@ -1,5 +1,5 @@
 var config = {
-  logo: "https://raw.githubusercontent.com/mauebrm/silencio/1a24718e55c5500516153b62ff2031c075815a84/logo%20sil.svg",
+  logo: "",
   style: 'mapbox://styles/mauberm/cmdaz9kbb00s301sa9fp379s6',
   accessToken: "pk.eyJ1IjoibWF1YmVybSIsImEiOiJjbDkwandiMXAwdDJkM3ZvNjhyNGtyYmtvIn0.f8f_PAURro1hU-sh_xnAuA",
   showMarkers: false,
@@ -274,5 +274,6 @@ var config = {
     }
   ]
 };
+
 
 
