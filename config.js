@@ -1,5 +1,5 @@
 var config = {
-  logo: "https://github.com/mauebrm/silencio/blob/main/ELSILENCIO_25VERDE.png?raw=true",
+  logo: "https://raw.githubusercontent.com/mauebrm/silencio/f038227a70ff92729c38f6c22b5c8d08fc263a17/bitmap.svg",
   style: 'mapbox://styles/mauberm/cmdaz9kbb00s301sa9fp379s6',
   accessToken: "pk.eyJ1IjoibWF1YmVybSIsImEiOiJjbDkwandiMXAwdDJkM3ZvNjhyNGtyYmtvIn0.f8f_PAURro1hU-sh_xnAuA",
   showMarkers: false,
@@ -274,3 +274,4 @@ var config = {
     }
   ]
 };
+
